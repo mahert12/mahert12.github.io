@@ -2,89 +2,106 @@
 <html>
   <head>
     <meta charset='UTF-8'>
+    <link rel='stylesheet' href='index.css'>
     <title>(Work In Progress)Tim Maher, Developer</title>
   </head>
 
   <body>
     <h1>THIS IS A WORK IN PROGRESS</h1>
-    <header id='header_main'>
-      <a href='#'><h1>Tim Maher</h1></a>
-      <nav>
-        <a href='#section_about'>About Me</a> |
-        <a href='#section_experiences'>My Experiences</a> |
-        <a href='#section_goals'>My Goals</a> |
-        <a href='#section_contact'>Contact Info</a> |
-        <a href='https://github.com/mahertim/mahertim.github.io'>Source</a>
-      </nav>
-    </header>
-
-    <section id='section_thingsilove'>
-      <p>
-        I love <span id='love'>programming</span>.
-      </p>
-    </section>
-
-    <section id='section_about'>
-      <header>
-        <h3>About Me</h3>
+    <div class='header'>
+      <header id='header_main'>
+        <nav>
+          <a href='#' class='logo'>Tim Maher</a> |
+          <a href='#section_about'>About Me</a> |
+          <a href='#section_experiences'>My Experiences</a> |
+          <a href='#section_fun_things'>My Goals</a> |
+          <a href='#section_contact'>Contact Info</a> |
+          <a href='https://github.com/mahertim/mahertim.github.io'>Source</a>
+        </nav>
       </header>
+    </div>
+    <div class='grid-container'>
+      <div class='things_i_love'>
+        <section id='section_things_i_love'>
+          <p>
+            I love <span id='love'>programming</span>.
+          </p>
+        </section>
+      </div>
 
-      <p>
-        Hi!  My name is Tim and I'm a software developer.  I primarily work on websites, but you can find out all about my work and projects below.
-      </p>
-      <p>
-        Outside of work I have quite a few hobbies.  My favorite is snowboarding, but due to Maryland's climate I can't spend as much time on that as I would like.  When I'm not writing code or snowboarding I try to learn as much as I can about as much as I can.  I love watching recordings of lectures or trying out online tutorials.
-      </p>
-      <p>
-        Like most software developers I also play games (digital and physical).  But more than just playing, I also love the study of games, the study of 'play' in general, and looking at ways that that can be applied to other disiplines.
-      </p>
-    </section>
+      <div class='about'>
+        <section id='section_about'>
+          <header>
+            <h3>About Me</h3>
+          </header>
 
-    <section id='section_experiences'>
-      <header>
-        <h3>Experiences / Past Projects</h3>
-      </header>
+          <p>
+            Hi!  My name is Tim and I'm a software developer.  I primarily work on websites, but you can find out all about my work and projects below.
+          </p>
+          <p>
+            Outside of work I have quite a few hobbies.  My favorite is snowboarding, but due to Maryland's climate I can't spend as much time on that as I would like.  When I'm not writing code or snowboarding I try to learn as much as I can about as much as I can.  I love watching recordings of lectures or trying out online tutorials.
+          </p>
+          <p>
+            Like most software developers I also play games (digital and physical).  But more than just playing, I also love the study of games, the study of 'play' in general, and looking at ways that that can be applied to other disiplines.
+          </p>
+        </section>
+      </div>
 
-      <h4>ApplicationsOnline</h4>
-      <p>
-        I currently work here.  I started at <a href='http://applicationsonline.com/'>ApplicationsOnline</a> in April of 2017, then shortly became a full time employee in March that same year.
-      </p>
-      <p>
-        I've worked a little bit on every project ApplicationsOnline has, but spend most of my time improving the <a href='https://applywithus.com/'>ApplyWithUs platform</a> which includes <a href='https://gatewaytoprepschools.com/'>Gateway to Prep Schools</a> and <a href='https://universalcollegeapp.com/'>The Universal College Application</a>.  I've also spent a large amount of time working on and launching the <a href='https://awu-cmp.com/'>CMP platform</a>.
-      </p>
-      <p>
-        At ApplicationsOnline I have taken on a leadership role within the software development team and I frequently communicate with clients in addition to my software development tasks.
-      </p>
+      <div class='fun_things'>
+        <section id='section_fun_things'>
+          <header>
+            <h3>Fun Things I've Made</h3>
+          </header>
 
-      <h4>UMBC</h4>
-      <p>
-        I studied at UMBC for 5 years learning computer science with a focus on game design.  Some of my favorite courses include <span class='course'>Ethics in Computer Science</span>, <span class='course'>Special Topics in Computer Science: Computer Vision</span>, and <span class='course'>History and Theory of Game Design</span>.  I'm always happy to talk about these 3 courses, and many others.  I very much enjoyed my time there and its even where I met my fiancée.  In addition to my studies at UMBC, I managed the Friday Night LANs club for 2 years.
-      </p>
-    </section>
+          <ul>
+            <li><a href=''>My personal website!</a> (Warning: Recursive)</li>
+            <li>More coming soon!</li>
+          </ul>
+        </section>
+      </div>
 
-    <section id='section_goals'>
-      <header>
-        <h3>Fun Things I've Made</h3>
-      </header>
+      <div class='experiences'>
+        <section id='section_experiences'>
+          <header>
+            <h3>Experiences / Past Projects</h3>
+          </header>
 
-      <ul>
-        <li><a href=''>My personal website!</a> (Warning: Recursive)</li>
-        <li>More coming soon!</li>
-      </ul>
-    </section>
+          <h4>ApplicationsOnline</h4>
+          <p>
+            I currently work here.  I started at <a href='http://applicationsonline.com/'>ApplicationsOnline</a> in April of 2017, then shortly became a full time employee in March that same year.
+          </p>
+          <p>
+            I've worked a little bit on every project ApplicationsOnline has, but spend most of my time improving the <a href='https://applywithus.com/'>ApplyWithUs platform</a> which includes <a href='https://gatewaytoprepschools.com/'>Gateway to Prep Schools</a> and <a href='https://universalcollegeapp.com/'>The Universal College Application</a>.  I've also spent a large amount of time working on and launching the <a href='https://awu-cmp.com/'>CMP platform</a>.
+          </p>
+          <p>
+            At ApplicationsOnline I have taken on a leadership role within the software development team and I frequently communicate with clients in addition to my software development tasks.
+          </p>
 
-    <section id='section_contact'>
-      <header>
-        <h3>Contact Info</h3>
-      </header>
+          <h4>UMBC</h4>
+          <p>
+            I studied at UMBC for 5 years learning computer science with a focus on game design.  Some of my favorite courses include <span class='course'>Ethics in Computer Science</span>, <span class='course'>Special Topics in Computer Science: Computer Vision</span>, and <span class='course'>History and Theory of Game Design</span>.  I'm always happy to talk about these 3 courses, and many others.  I very much enjoyed my time there and its even where I met my fiancée.  In addition to my studies at UMBC, I managed the Friday Night LANs club for 2 years.
+          </p>
+        </section>
+      </div>
 
-      <p>
-        Please feel free to email me at <a href='mailto:tim@timmaher.com'>tim@timmaher.com</a> or reach out to me on <a href='https://www.linkedin.com/in/timothy-maher/'>LinkedIn</a>.
-      </p>
-      <p>I also do my best to respond to carrier pigeon, message-in-a-bottle, and arcane summonings but these have been inefective as of yet.</p>
-    </section>
+      <div class='contact'>
+        <section id='section_contact'>
+          <header>
+            <h3>Contact Info</h3>
+          </header>
 
-    <footer id='footer_main'></footer>
+          <p>
+            Please feel free to email me at <a href='mailto:tim@timmaher.com'>tim@timmaher.com</a> or reach out to me on <a href='https://www.linkedin.com/in/timothy-maher/'>LinkedIn</a>.
+          </p>
+          <p>I also do my best to respond to carrier pigeon, message-in-a-bottle, and arcane summonings but these have been inefective as of yet.</p>
+        </section>
+      </div>
+
+      <div class='footer'>
+        <footer id='footer_main'></footer>
+      </div>
+    </div>
+
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
     <script src='index.js'></script>
   </body>
