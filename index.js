@@ -3,16 +3,25 @@ $(function () {
   prev1 = 0;
   prev2 = 0;
   wordsArray = [
+    "programming",
     "art",
     "board games",
+    "card games",
     "cats",
+    "the color blue",
     "computers",
+    "cyberpunk",
     "design",
     "dogs",
+    "fantasy",
+    "Holly",
     "music",
-    "programming",
+    "Pebble and Harry",
     "reading books",
+    "role-playing games",
+    "science fiction",
     "snowboarding",
+    "tabletop games",
     "video games",
   ];
   setInterval(
@@ -25,7 +34,6 @@ $(function () {
       while (count == prev1 || count == prev2) {
         count = Math.round(Math.random() * wordsArray.length);
       }
-      console.log("count: " + count + " prev1: " + prev1 + " prev2: " + prev2)
     },
     4000
   );
