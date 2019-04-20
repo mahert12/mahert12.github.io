@@ -1,56 +1,95 @@
 :root {
   --gunmetal: #2D3142;
-  --dark-sea-green: #79B791;
-  --turquoise-green: #ABD1B5;
+  --black-coral: #4F5D75;
   --floral-white: #FFFAFA;
   --light-red-ochre: #EF8354;
-
-  --gunmetal: #2D3142;
-  --black-coral: #4F5D75;
-  --silver: #BFC0C0;
-  --white: #FFFFFF;
-  --light-red-ochre: #EF8354;
+  --flat-grey: #A0A0A0;
 }
 
 body {
+  margin: 0px;
+  margin-bottom: 10px;
+  font-family: monospace;
+}
+
+.bg-gunmetal { background-color: var(--gunmetal); }
+.bg-black-coral { background-color: var(--black-coral); }
+.bg-floral-white { background-color: var(--floral-white); }
+.bg-light-red-ochre { background-color: var(--light-red-ochre); }
+.bg-flat-grey { background-color: var(--flat-grey); }
+
+.fg-gunmetal { color: var(--gunmetal); }
+.fg-black-coral { color: var(--black-coral); }
+.fg-floral-white { color: var(--floral-white); }
+.fg-light-red-ochre { color: var(--light-red-ochre); }
+.fg-flat-grey { color: var(--flat-grey); }
+
+.center-text { text-align: center; }
+.right-text { text-align: right; padding-right: 2rem; }
+.vertical-center { padding-top: 0.25em; padding-bottom: 0.25em; }
+
+.pad-left { padding-left: 1rem; }
+.pad-right { padding-right: 1rem; }
+.pad-both { padding-left: 1rem; padding-right: 1rem; }
+
+.nav-group { position: sticky; top: 0; left: 0; }
+
+.emph { color: var(--light-red-ochre); }
+
+.a-gunmetal, .a-gunmetal:visited {
   color: var(--gunmetal);
-  background-color: var(--floral-white);
+}
+.a-gunmetal:hover {
+  color: var(--light-red-ochre);
 }
 
-a {
-  padding: 2px;
-}
-
-a:link, a:visited {
-  color: var(--dark-sea-green);
-}
-
-a:hover {
-  color: var(--turquoise-green);
-}
-
-a:active {
-  border: 2px solid var(--light-red-ochre);
-  border-radius: 2px;
-}
-
-.header {
-  text-align: center;
-  position: sticky;
-  top: 0;
-  background-color: var(--gunmetal);
+.a-floral-white, .a-floral-white:visited {
   color: var(--floral-white);
-  width: 100%;
+}
+.a-floral-white:hover {
+  color: var(--light-red-ochre);
 }
 
-.grid-container {
+.a-emph, .a-emph:visited {
+  color: var(--light-red-ochre);
+}
+.a-emph:hover {
+  color: var(--gunmetal);
+}
+
+#main-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
+  grid-template-columns: minmax(0px, 1fr) repeat(10, minmax(10px, 1fr)) minmax(0px, 1fr);
+  grid-gap: 0;
+}
+.main-grid-center {
+  padding-top: 10px;
+  grid-column-start: 2;
+  grid-column-end: 12;
 }
 
-.things_i_love, .contact {
+.thirds-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  grid-gap: 0;
+}
+.thirds-grid-left {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.thirds-grid-center {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.thirds-grid-right {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+.thirds-grid-left-double {
   grid-column-start: 1;
   grid-column-end: 3;
-  text-align: center;
+}
+.thirds-grid-right-double {
+  grid-column-start: 2;
+  grid-column-end: 4;
 }
