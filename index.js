@@ -3,6 +3,7 @@ $(function () {
   prev1 = 0;
   prev2 = 0;
   // strings to randomly populate the "things I love section"
+  // programming should be first so that it is not repeated immedeatly on page load
   wordsArray = [
     "programming",
     "art",
