@@ -37,8 +37,8 @@ $(function () {
       prev1 = count;
       // find a string that hasn't been used recently
       while (count == prev1 || count == prev2) {
-        // need to do (wordsArray.length-1) and then add 1 at the end to prevent out of bounds
-        count = Math.round(Math.random() * (wordsArray.length-1)) + 1;
+        // floor prevents out of bounds better than my previous solution
+        count = Math.floor(Math.random() * wordsArray.length);
       }
     },
     4000
