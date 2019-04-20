@@ -1,15 +1,18 @@
 :root {
   --gunmetal: #2D3142;
+  --purple: #2D3172;
   --black-coral: #4A596D;
   --floral-white: #FAFAFF;
   --light-red-ochre: #9A380E;
   --flat-grey: #A0A0AA;
+  --light-grey: #CACACF;
 }
 
 body {
   margin: 0px;
   margin-bottom: 10px;
   font-family: monospace;
+  line-height: 1.6;
 }
 
 .bg-gunmetal { background-color: var(--gunmetal); }
@@ -41,6 +44,14 @@ body {
 }
 .a-gunmetal:hover {
   color: var(--light-red-ochre);
+}
+
+.a-purple, .a-purple:visited {
+  color: var(--purple);
+}
+.a-purple:hover {
+  color: var(--light-red-ochre);
+  background-color: var(--light-grey);
 }
 
 .a-floral-white, .a-floral-white:visited {
